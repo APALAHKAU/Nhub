@@ -1,0 +1,254 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("N•Hub", "Synapse")
+
+local Tab = Window:NewTab("About")
+local Section = Tab:NewSection("About")
+Section:NewButton("My Discord | Click To Get The Link", "My Discord", function()
+    setclipboard("https://discord.com/invite/4RvYENtT")
+end)
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerName = player.Name
+local UserId = player.UserId
+local DN = player.DisplayName
+local PlaceId = game.PlaceId
+local ServerId = game.JobId
+local GameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+local Tab = Window:NewTab("👤User Info")
+local Section = Tab:NewSection("Made By Newbie For Scripting")
+Section:NewLabel("Player Name: " .. playerName)
+Section:NewLabel("Player UserId: " .. UserId)
+Section:NewLabel("Player DisplayName: " .. DN)
+Section:NewLabel("Game Name: " .. GameName)
+
+local accountAge = player.AccountAge
+Section:NewLabel("Account Age: " .. accountAge .. " days")
+
+local executor = identifyexecutor() or "unknown"
+Section:NewLabel("Executor: " ..identifyexecutor())
+
+Section:NewLabel("N•Hub v1 Status : ✅")
+
+local Tab = Window:NewTab("🕹️Games")
+local Section = Tab:NewSection("Blox Fruit🍇 | Has Key | No Key")
+Section:NewButton("RenzHub | No Key", "Only In Blox Fruit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+Section:NewButton("Bounty Hunting | No Key", "Only Work In Blox Fruit", function()
+    getgenv().Setting = {
+        ["Team"] = "Pirates",
+        ["Chat"] = {""},
+        ["Skip Race V4"] = true,
+        ["Misc"] = {
+            ["Enable Lock Bounty"] = false,
+            ["Lock Bounty"] = {0, 300000000},
+            ["Hide Health"] = {3500, 5000},
+            ["Lock Camera"] = true,
+            ["Enable Cam Farm"] = false,
+            ["White Screen"] = false,
+            ["FPS Boost"] = false,
+            ["Bypass TP"] = true,
+            ["Random & Store Fruit"] = true
+        },
+        ["Item"] = {
+            ["Melee"] = {
+                ["Enable"] = true,
+                ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
+                ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+                ["C"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+            },
+            ["Blox Fruit"] = {
+                ["Enable"] = false,
+                ["Z"] = {["Enable"] = true, ["Hold Time"] = 1.5},
+                ["X"] = {["Enable"] = true, ["Hold Time"] = 0},
+                ["C"] = {["Enable"] = true, ["Hold Time"] = 0},
+                ["V"] = {["Enable"] = true, ["Hold Time"] = 0},
+                ["F"] = {["Enable"] = true, ["Hold Time"] = 0}
+            },
+            ["Sword"] = {
+                ["Enable"] = true,
+                ["Z"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+                ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+            },
+            ["Gun"] = {
+                ["Enable"] = false,
+                ["Z"] = {["Enable"] = true, ["Hold Time"] = 0.1},
+                ["X"] = {["Enable"] = true, ["Hold Time"] = 0.1}
+            }
+        }
+    }
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ItzWindy01/WindyXBypass/main/BountyLoadder.lua"))()
+end)
+Section:NewButton("FaiFao | No key", "Only In Blox Fruit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua"))()
+end)
+Section:NewButton("Quartyx • PvP Pirate | Has Key", "ButtonInfo", function()
+    getgenv().Mode = "PVP"
+    getgenv().Team = "Pirates"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader"))()
+end)
+Section:NewButton("Quartyx • PvP Marine | Has Key", "Only In Blox Fruit", function()
+    getgenv().Mode = "PVP"
+    getgenv().Team = "Marine"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader"))()
+end)
+Section:NewButton("BananaHub | No Key And Not Original", "Only In Blox Fruit", function()
+    _G.Key = "AfxcaxiRoblox"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RafakjRoblox/Crack/main/Banana%20No%20Key"))()
+end)
+Section:NewButton("X Sea | No Key", "Only In Blox Fruit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XRayDerxDOne/Release-/main/Release.lua"))()
+end)
+Section:NewButton("|HUB| Matsune v1 | No Key", "Only In Blox Fruit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Matsune/main/matsunehubv1.lua"))()
+end)
+
+local Section = Tab:NewSection("Who Is The spy🤫 | No Key")
+Section:NewButton("See The Word | No Key", "Only In Who Is The Spy", function()
+    loadstring(game:HttpGet("https://pastefy.app/jihrsPh8/raw", true))()
+end)
+
+local Section = Tab:NewSection("Cheese Escape🧀")
+Section:NewButton("MinionHub | No Key", "Only In Cheese Escape", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MinionRoblox/CHEESE-ESCAPE/main/Scripts%20from%20Minion.lua"))()
+end)
+Section:NewButton("Op Script | No Key", "Only In Cheese Escape", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nikita365/Cheese-Escape/main/Nikita", true))()
+end)
+
+local Section = Tab:NewSection("Doomspire BrickBattle🧱")
+Section:NewButton("BrickHub | No Key", "Only In Doomspire Brickbattle", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yousuck780/brickhub/main/V1", true))()
+end)
+
+local Section = Tab:NewSection("Pet Simulator 99🐱")
+Section:NewButton("PSX | No Key", "Only In Pet Simulator X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/psxhub/psx/main/script.lua"))()
+end)
+Section:NewButton("Huge Hub | No Key", "Only In Pet Simulator X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hubloader/psx/main/hugehub.lua"))()
+end)
+
+local Section = Tab:NewSection("Brookhaven🏡")
+Section:NewButton("BrookHub | No Key", "Only In Brookhaven", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/brookhub/brookhaven/main/script.lua"))()
+end)
+Section:NewButton("Heaven Script | No Key", "Only In Brookhaven", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/heavenhub/brookhaven/main/heaven.lua"))()
+end)
+
+local Section = Tab:NewSection("Arsenal🔫")
+Section:NewButton("Aimbot | No Key", "Only In Arsenal", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/aimbot/arsenal/main/script.lua"))()
+end)
+Section:NewButton("ESP | No Key", "Only In Arsenal", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/esp/arsenal/main/esp.lua"))()
+end)
+
+local Tab = Window:NewTab("📃Universal")
+
+local Section = Tab:NewSection("📃Universal")
+
+Section:NewButton("Multi Scripters X", "Universal", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+end)
+
+Section:NewButton("Free Gammepass Script", "Universal", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/wynerdV2.lua",true))()
+end)
+
+Section:NewButton("HitBox Expander", "Im So Tired", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/HitboxExpander.lua"))()
+end)
+
+Section:NewButton("Game Hub V6", "Universal", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub/main/loader"))()
+end)
+
+Section:NewButton("Game Hub All Tycoon", "Universal", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Game-Hub-All-Tycoons/main/loader"))()
+end)
+
+Section:NewButton("Position Finder", "Universal", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Position-Finder/main/loader"))()
+end)
+
+local Section = Tab:NewSection("🕴️Remote spy")
+Section:NewButton("Remote Spy", "BY NEWBIE FOR SCRIPT", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+end)
+
+Section:NewButton("Turtle Spy", "BY NEWBIE FOR SCRIPT", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+end)
+
+Section:NewButton("Remote Hub", "BY NEWBIE FOR SCRIPT", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/RemoteHub/main/Main",true))()
+end)
+
+local Section = Tab:NewSection("✉️Dex Explorer")
+Section:NewButton("Dex 2.0", "BY NEWBIE FOR SCRIPT", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JustAP1ayer/ugc/main/Dex"))()
+end)
+
+local Tab = Window:NewTab("⚙️Settings")
+
+local Section = Tab:NewSection("UI Settings")
+Section:NewKeybind("Toggle UI", "Toggle the UI", Enum.KeyCode.RightControl, function()
+    Library:ToggleUI()
+end)
+Section:NewButton("Toggle Ui For Mobile", "Toggle Ui", function()
+    local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "ToggleUi"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+end)
+
+
+local Section = Tab:NewSection("Miscellaneous")
+Section:NewButton("Rejoin Game", "Rejoin the current game", function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, player)
+end)
+Section:NewButton("Server Hop", "Hop to a different server", function()
+    local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100")).data
+    for _, server in pairs(servers) do
+        if server.playing < server.maxPlayers then
+            game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, server.id, player)
+            break
+        end
+    end
+end)
+Section:NewButton("Copy Game Link", "Copy the game link to clipboard", function()
+    setclipboard("https://www.roblox.com/games/" .. game.PlaceId)
+end)
+
+local Section = Tab:NewSection("Credits")
+Section:NewLabel("Script | Newbie For Scripting")
+Section:NewLabel("UI Library | xHeptc")
+Section:NewLabel("Helped | Orealated")
+Section:NewLabel("Testing | Cube")
+
+local Tab = Window:NewTab("Update Log")
+local Section = Tab:NewSection("Update Log🧾")
+Section:NewLabel("Nothing Because The Script just released")
